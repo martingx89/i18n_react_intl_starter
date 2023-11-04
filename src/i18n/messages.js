@@ -9,6 +9,7 @@ export const messages = {
     // menu
     about_project: 'About the project',
     contact_us: 'Contact us',
+    click_count: 'You clicked {count, plural, one {# time} other {# times}}',
   },
   [LOCALES.FRENCH]: {
     learn_to: 'Bonjour, apprenons à utiliser React-Intl',
@@ -18,6 +19,7 @@ export const messages = {
     // menu
     about_project: 'À propos du projet',
     contact_us: 'Contactez-nous',
+    click_count: 'Vous avez cliqué {count, plural, one {# fois} other {# fois}}',
   },
   [LOCALES.GERMAN]: {
     learn_to: 'Hallo, lass uns lernen, wie man React-Intl benutzt',
@@ -27,6 +29,7 @@ export const messages = {
     // menu
     about_project: 'Über das Projekt',
     contact_us: 'Kontaktiere uns',
+    click_count: 'Sie haben {count, plural, one {# Mal} other {# Mal}} geklickt',
   },
   [LOCALES.JAPANESE]: {
     learn_to: 'こんにちは、React-Intlの使い方を学びましょう',
@@ -36,6 +39,7 @@ export const messages = {
     // menu
     about_project: 'プロジェクトについて',
     contact_us: 'お問い合わせ',
+    click_count: '{count, plural, one {# 回} other {# 回}}クリックしました',
   },
   [LOCALES.POLISH]: {
     learn_to: 'Cześć, nauczmy się jak używać React Intl',
@@ -45,5 +49,6 @@ export const messages = {
     // menu
     about_project: 'O projekcie',
     contact_us: 'Kontakt',
+    click_count: 'Kliknąłeś {count, plural, one {# time} other {# razy}}',
   },
 };

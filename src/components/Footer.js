@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FormattedDate, FormattedNumber, FormattedPlural, useIntl } from 'react-intl';
+import { FormattedDate, FormattedNumber, FormattedPlural, useIntl, FormattedMessage } from 'react-intl';
 
 const Footer = () => {
   const [count, setCount] = useState(0);
@@ -12,7 +12,9 @@ const Footer = () => {
       {/* Footer content here */}
       <p>Please click the button below</p>
       <button onClick={onChange}>click here</button>
-      <p>You clicked {count} times</p>
+      <p>
+        <FormattedMessage id='click_count' values={{ count: count }} />
+      </p>
       <FormattedDate value={Date.now()} />
       <br />
       <FormattedNumber value={2000} style={`currency`} currency='USD' />
