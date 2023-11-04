@@ -10,6 +10,8 @@ export const messages = {
     about_project: 'About the project',
     contact_us: 'Contact us',
     click_count: 'You clicked {count, plural, one {# time} other {# times}}',
+    click_button: 'Please click the button below',
+    click_here: 'click here',
   },
   [LOCALES.FRENCH]: {
     learn_to: 'Bonjour, apprenons à utiliser React-Intl',
@@ -20,6 +22,8 @@ export const messages = {
     about_project: 'À propos du projet',
     contact_us: 'Contactez-nous',
     click_count: 'Vous avez cliqué {count, plural, one {# fois} other {# fois}}',
+    click_button: 'Veuillez cliquer sur le bouton ci-dessous',
+    click_here: 'Cliquez ici',
   },
   [LOCALES.GERMAN]: {
     learn_to: 'Hallo, lass uns lernen, wie man React-Intl benutzt',
@@ -30,6 +34,8 @@ export const messages = {
     about_project: 'Über das Projekt',
     contact_us: 'Kontaktiere uns',
     click_count: 'Sie haben {count, plural, one {# Mal} other {# Mal}} geklickt',
+    click_button: 'Bitte klicken Sie auf die Schaltfläche unten',
+    click_here: 'klicken Sie hier',
   },
   [LOCALES.JAPANESE]: {
     learn_to: 'こんにちは、React-Intlの使い方を学びましょう',
@@ -40,6 +46,8 @@ export const messages = {
     about_project: 'プロジェクトについて',
     contact_us: 'お問い合わせ',
     click_count: '{count, plural, one {# 回} other {# 回}}クリックしました',
+    click_button: '下のボタンをクリックしてください',
+    click_here: 'ここをクリック',
   },
   [LOCALES.POLISH]: {
     learn_to: 'Cześć, nauczmy się jak używać React Intl',
@@ -50,5 +58,7 @@ export const messages = {
     about_project: 'O projekcie',
     contact_us: 'Kontakt',
     click_count: 'Kliknąłeś {count, plural, one {# time} other {# razy}}',
+    click_button: 'Kliknij przycisk poniżej',
+    click_here: 'Kliknij tutaj',
   },
 };

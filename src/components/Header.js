@@ -1,30 +1,36 @@
+import { FormattedMessage } from 'react-intl';
+
 const Header = () => {
   const menu = [
     {
-      title: "About the project",
-      path: "#",
+      key: 'about_project',
+      title: 'About the project',
+      path: '#',
     },
     {
-      title: "Contact us",
-      path: "#",
+      key: 'contact_us',
+      title: 'Contact us',
+      path: '#',
     },
   ];
 
   return (
     <header>
-      <div className="container header_content">
-        <div className="brand">ReactIntl</div>
+      <div className='container header_content'>
+        <div className='brand'>ReactIntl</div>
         <nav>
           <ul>
-            {menu.map(({ title, path }) => (
+            {menu.map(({ title, path, key }) => (
               <li key={title}>
-                <a href={path}>{title}</a>
+                <a href={path}>
+                  <FormattedMessage id={key} />
+                </a>
               </li>
             ))}
           </ul>
         </nav>
-        <div className="spacer"></div>
-        <div className="switcher">{/* Language switch dropdown here */}</div>
+        <div className='spacer'></div>
+        <div className='switcher'>{/* Language switch dropdown here */}</div>
       </div>
     </header>
   );

@@ -10,8 +10,12 @@ const Footer = () => {
   return (
     <div className='container mt'>
       {/* Footer content here */}
-      <p>Please click the button below</p>
-      <button onClick={onChange}>click here</button>
+      <p>
+        <FormattedMessage id='click_button' />
+      </p>
+      <button onClick={onChange}>
+        <FormattedMessage id='click_here' />
+      </button>
       <p>
         <FormattedMessage id='click_count' values={{ count: count }} />
       </p>
