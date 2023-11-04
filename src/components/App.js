@@ -4,7 +4,6 @@ import Footer from './Footer';
 import { IntlProvider } from 'react-intl';
 
 const App = () => {
-  // console.log(IntlProvider);
   return (
     <IntlProvider messages={{}} locale='en' defaultLocale='en'>
       <div>
