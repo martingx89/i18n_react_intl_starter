@@ -57,7 +57,7 @@ export const messages = {
     // menu
     about_project: 'O projekcie',
     contact_us: 'Kontakt',
-    click_count: 'Kliknąłeś {count, plural, one {# time} other {# razy}}',
+    click_count: 'Kliknąłeś {count, plural, one {# raz} other {# razy}}',
     click_button: 'Kliknij przycisk poniżej',
     click_here: 'Kliknij tutaj',
   },

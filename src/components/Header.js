@@ -1,6 +1,16 @@
 import { FormattedMessage } from 'react-intl';
+import { LOCALES } from '../i18n/locales';
 
-const Header = () => {
+const Header = (props) => {
+  // Languages
+  const languages = [
+    { name: 'English', code: LOCALES.ENGLISH },
+    { name: '日本語', code: LOCALES.JAPANESE },
+    { name: 'Français', code: LOCALES.FRENCH },
+    { name: 'Deutsche', code: LOCALES.GERMAN },
+    { name: 'Polski', code: LOCALES.POLISH },
+  ];
+
   const menu = [
     {
       key: 'about_project',
@@ -30,7 +40,17 @@ const Header = () => {
           </ul>
         </nav>
         <div className='spacer'></div>
-        <div className='switcher'>{/* Language switch dropdown here */}</div>
+        <div className='switcher'>
+          {/* Language switch dropdown here */}
+          Languages{' '}
+          <select onChange={props.handleChange} value={props.currentLocale}>
+            {languages.map(({ name, code }) => (
+              <option key={code} value={code}>
+                {name}
+              </option>
+            ))}
+          </select>
+        </div>
       </div>
     </header>
   );
