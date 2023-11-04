@@ -6,7 +6,7 @@ import { LOCALES } from '../i18n/locales';
 import { messages } from '../i18n/messages';
 
 const App = () => {
-  const locale = LOCALES.ENGLISH;
+  const locale = LOCALES.POLISH;
 
   return (
     <IntlProvider messages={messages[locale]} locale={locale} defaultLocale={LOCALES.ENGLISH}>
