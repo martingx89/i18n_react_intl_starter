@@ -1,14 +1,18 @@
-import Header from "./Header";
-import Content from "./Content";
-import Footer from "./Footer";
+import Header from './Header';
+import Content from './Content';
+import Footer from './Footer';
+import { IntlProvider } from 'react-intl';
 
 const App = () => {
+  // console.log(IntlProvider);
   return (
-    <div>
-      <Header />
-      <Content />
-      <Footer />
-    </div>
+    <IntlProvider messages={{}} locale='en' defaultLocale='en'>
+      <div>
+        <Header />
+        <Content />
+        <Footer />
+      </div>
+    </IntlProvider>
   );
 };
 
